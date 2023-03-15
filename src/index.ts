@@ -100,7 +100,6 @@ const main = async () => {
   const currentlyPlayingSong = await getCurrentlyPlayingSong()
   await setSkypeStatus(currentlyPlayingSong)
 }
-main()
 
 schedule('* * * * *', () => {
   console.log('cron')
