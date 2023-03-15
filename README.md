@@ -13,4 +13,4 @@ pnpm dev
 
 # TODO
 
-- [ ] - Refactor code, I'm currently short on time and lazy, I will probably refactor this code when I have some more free time
+- [ ] Refactor code, I'm currently short on time and lazy, I will probably refactor this code when I have some more free time
