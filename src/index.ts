@@ -2,7 +2,7 @@ import puppeteer, { Page } from 'puppeteer'
 import { schedule } from 'node-cron'
 import axios from 'axios'
 
-const { EMAIL, PASSWORD } = process.env
+const { EMAIL, PASSWORD, SPOTIFY_TOKEN } = process.env
 
 const sleep = (timeout: number) =>
   new Promise((resolve) => setTimeout(resolve, timeout))
@@ -86,7 +86,7 @@ const getCurrentlyPlayingSong = async () => {
     'https://api.spotify.com/v1/me/player/currently-playing',
     {
       headers: {
-        Authorization: `Bearer `,
+        Authorization: `Bearer ${SPOTIFY_TOKEN}`,
       },
     }
   )
